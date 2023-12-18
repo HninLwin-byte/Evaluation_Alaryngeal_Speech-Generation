@@ -1,0 +1,143 @@
+name: Demo test
+welcome:
+  description: |-
+    #### ABX 
+
+    This is the subjective ABX Test for Normal to Alaryngeal and Alaryngeal to Normal Voice Conversion.
+
+    In this listening test you'll be given three different options with different compression methods
+    and your task is to choose your preferred option. There are two different clips with 10 iterations
+    each. This is an AB test. ABX tests where the listener needs to tell if sample X is the same as
+    sample A or sample B. Greater number of sample options is supported although it's recommended to
+    keep the number relatively low to avoid overloading the listener.
+
+    You'll see your results at the end. It would also be possible to have the test send the results to
+    the researcher by supplying an email in the configuration file but this test does not do so. The form
+    below is an example of what can be done to gather statistics about the different demographics. The
+    email sent to the research would also include the form data.
+  form:
+    - name: Age
+      inputType: number
+    - name: Gender
+      inputType: select
+      options:
+        - Female
+        - Male
+        - Other
+    - name: Experience
+      inputType: select
+      options:
+        - Trained listener
+        - Audio engineer
+        - Audio retailer
+        - Student
+        - Audio reviewer
+        - Self-proclaimed audiophile
+        - Musician
+        - None of the above
+results:
+  description: |-
+    ### Results
+
+    Here are your results
+options:
+  - name: Sons of Winter and Stars (lossless)
+    audioUrl: https://www.dropbox.com/s/9e92quf9tr7aj8s/Wintersun%20-%20Sons%20of%20Winter%20and%20Stars%20lossless.wav?dl=0
+    tag: lossless
+  - name: Sons of Winter and Stars (64 kbps MP3)
+    audioUrl: https://www.dropbox.com/s/epvit0keu9w7emp/Wintersun%20-%20Sons%20of%20Winter%20and%20Stars%2064%20kbps.mp3?dl=0
+    tag: 64 kbps
+  - name: Sons of Winter and Stars (32 kbps MP3)
+    audioUrl: https://www.dropbox.com/s/6y0av9tydwsfv6y/Wintersun%20-%20Sons%20of%20Winter%20and%20Stars%2032%20kbps.mp3?dl=0
+    tag: 32 kbps
+  - name: Hotel California (lossless)
+    audioUrl: https://www.dropbox.com/s/9j3zdynxrfipezn/Eagles%20-%20Hotel%20California%20lossless.wav?dl=0
+    tag: lossless
+  - name: Hotel California (64 kbps MP3)
+    audioUrl: https://www.dropbox.com/s/5p1gayvfmb3fc0z/Eagles%20-%20Hotel%20California%2064%20kbps.mp3?dl=0
+    tag: 64 kbps
+  - name: Hotel California (32 kbps MP3)
+    audioUrl: https://www.dropbox.com/s/bu5aa181sk3q2ca/Eagles%20-%20Hotel%20California%2032%20kbps.mp3?dl=0
+    tag: 32 kbps
+  - name: Bird on a Wire (lossless)
+    audioUrl:  https://www.dropbox.com/scl/fi/dbkaezgyfttk39qdslu71/0011_0001.wav?rlkey=89khx8zgas3obsdoronxi42nw&dl=0
+  - name: Bird on a Wire (64 kbps MP3)
+    audioUrl: https://www.dropbox.com/scl/fi/uxtjvnqcto7kyvgm0kx6b/2-female_converted_normal_to_alaryngeal.wav?rlkey=of47e69kgt1kqed44137isurz&dl=0
+    tag: 64 kbps
+  - name: Bird on a Wire (32 kbps MP3)
+    audioUrl: https://www.dropbox.com/scl/fi/3xr0eh85gb7ylszs7fkqy/output_0001.wav?rlkey=pbbyxhage89a2hin3mnqisjbg&dl=0
+    tag: 32 kbps
+  - name: Sentence 2 (lossless)
+    audioUrl: https://www.dropbox.com/scl/fi/kzeslo1kbuaw55nv36l9w/0001_0002.wav?rlkey=sey50i8g53orfeen8hmhb5ron&dl=0
+  - name: Sentence 2 (64 kbps MP3)
+    audioUrl: https://www.dropbox.com/scl/fi/6lwtwdexs26eex8yb59w8/output_0002.wav?rlkey=xw34kkuurrg22lw893a9jh5xv&dl=0
+    tag: 64 kbps
+  - name: Sentence 2 (32 kbps MP3)
+    audioUrl: https://www.dropbox.com/scl/fi/6lwtwdexs26eex8yb59w8/output_0002.wav?rlkey=xw34kkuurrg22lw893a9jh5xv&dl=0
+    tag: 32 kbps    
+  - name: Sentence 3 (lossless)
+    audioUrl: https://www.dropbox.com/scl/fi/5pg2d5vm5grmcka440c3s/0001_0003.wav?rlkey=szjjdo51xdi2hnb1xvqmt09ax&dl=0
+  - name: Sentence 3 (64 kbps MP3)
+    audioUrl: https://www.dropbox.com/scl/fi/ow30x8nzr4d53t2bkhcaa/output_0003.wav?rlkey=d5ink8kgvzpxretrsfxo5j64i&dl=0
+    tag: 64 kbps
+  - name: Sentence 3 (32 kbps MP3)
+    audioUrl: https://www.dropbox.com/scl/fi/ow30x8nzr4d53t2bkhcaa/output_0003.wav?rlkey=d5ink8kgvzpxretrsfxo5j64i&dl=0
+    tag: 32 kbps   
+  - name: Sentence 4 (lossless)
+    audioUrl: https://www.dropbox.com/scl/fi/eds05uijtsa02vdz7mfan/0001_0004.wav?rlkey=c340wugrmes7815br2qbegeyq&dl=0
+  - name: Sentence 4 (64 kbps MP3)
+    audioUrl: https://www.dropbox.com/scl/fi/s312394su2kf61650x9k1/output_0004.wav?rlkey=jtxutvlw395v5mclttapzr6go&dl=0
+    tag: 64 kbps
+  - name: Sentence 4 (32 kbps MP3)
+    audioUrl: https://www.dropbox.com/scl/fi/s312394su2kf61650x9k1/output_0004.wav?rlkey=jtxutvlw395v5mclttapzr6go&dl=0
+    tag: 32 kbps
+  - name: Sentence 5 (lossless)
+    audioUrl: https://www.dropbox.com/scl/fi/co4hm6dqr1firyod7qw5v/0001_0005.wav?rlkey=f16pxgj4f4ipmk4odvqxungyg&dl=0
+  - name: Sentence 5 (64 kbps MP3)
+    audioUrl: https://www.dropbox.com/scl/fi/jjshqyv5jkcv5zmfjexn0/output_0005.wav?rlkey=dj542s4uuqdrw88bw91gulcm8&dl=0
+    tag: 64 kbps
+  - name: Sentence 5 (32 kbps MP3)
+    audioUrl: https://www.dropbox.com/scl/fi/jjshqyv5jkcv5zmfjexn0/output_0005.wav?rlkey=dj542s4uuqdrw88bw91gulcm8&dl=0
+    tag: 32 kbps      
+tests:
+  - testType: ABX
+    name: Sentence 1
+    description: Select the most preferred option
+    options:
+      - Bird on a Wire (lossless)
+      - Bird on a Wire (64 kbps MP3)
+      - Bird on a Wire (32 kbps MP3)
+    repeat: 5
+  - testType: ABX
+    name: Sentence 2
+    description: Select the most preferred option
+    options:
+      - Sentence 2 (lossless)
+      - Sentence 2 (64 kbps MP3)
+      - Sentence 2 (32 kbps MP3)
+    repeat: 5
+  - testType: ABX
+    name: Sentence 3
+    description: Select the most preferred option
+    options:
+      - Sentence 3 (lossless)
+      - Sentence 3 (64 kbps MP3)
+      - Sentence 3 (32 kbps MP3)
+    repeat: 5
+  - testType: ABX
+    name: Sentence 4
+    description: Select the most preferred option
+    options:
+      - Sentence 4 (lossless)
+      - Sentence 4 (64 kbps MP3)
+      - Sentence 4 (32 kbps MP3)
+    repeat: 5
+  - testType: ABX
+    name: Sentence 5
+    description: Select the most preferred option
+    options:
+      - Sentence 5 (lossless)
+      - Sentence 5 (64 kbps MP3)
+      - Sentence 5 (32 kbps MP3)
+    repeat: 5
+email: youremail@gmail.com
