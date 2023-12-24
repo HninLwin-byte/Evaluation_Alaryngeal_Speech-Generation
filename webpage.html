@@ -103,22 +103,26 @@
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
         }
+
         #header {
             background-color: #6c584c;
             color: white;
             text-align: center;
             padding: 20px;
         }
+
         .audioContainer {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             padding: 20px;
         }
+
         .audioPlayer {
             width: calc(50% - 20px);
             margin-bottom: 20px;
         }
+
         .abstract,
         #basedline,
         #training,
@@ -127,36 +131,43 @@
         #specmix {
             margin: 20px;
         }
+
         .card-header {
             background-color: #6c584c;
         }
+
         .footer {
             text-align: center;
             padding: 20px;
         }
+
         .photoContainer {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             padding: 20px;
         }
+
         .photo {
             width: calc(50% - 20px);
             margin-bottom: 20px;
         }
+
         .photo img {
             max-width: 100%;
             height: auto;
         }
+
         .caption,
         .caption_spec {
             font-size: 14px;
             margin-top: 5px;
             text-align: center;
         }
+
         .vertical-line {
             border-left: 1px solid #ccc;
-            height: 100%; /* Adjust this value to match the height of your images */
+            height: 100%;
             margin: 0 15px;
         }
 
@@ -166,6 +177,12 @@
             }
             .photo {
                 width: 100%;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .card-body {
+                padding: 10px;
             }
         }
     </style>
