@@ -87,7 +87,23 @@
             border-left: 1px solid #ccc;
             height: 100%; /* Adjust this value to match the height of your images */
             margin: 0 15px;
+            
         }
+    @media (max-width: 767px) {
+        .audioPlayer {
+            width: calc(33.33% - 10px); /* Adjust the width and margin accordingly */
+            margin-bottom: 10px;
+        }
+        .photo {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .card-body {
+            padding: 10px;
+        }
+    }
     </style>
 </head>
 
@@ -144,7 +160,7 @@
         </div>
     </div>
     <div class="container mt-3">
-        <a href="google_form.html" class="btn btn-primary">Go to Page 2</a>
+        <a href="google_form.html" class="btn btn-primary">Go to Google Form</a>
     </div>
 
 
