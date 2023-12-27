@@ -4,14 +4,341 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evaluation Form</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #header {
+            background-color: #6c584c;
+            color: white;
+            text-align: center;
+            padding: 100px;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            margin-top: 20px; /* Adjust the top margin as needed */
+        }
+
+        .btn {
+            /* Add any styles you need for the button */
+        }
+
+        .iframe-container {
+            width: 50%; /* Set the width to take half of the page */
+            margin-top: 20px; /* Adjust the top margin as needed */
+        }
+
+        .card {
+            width: 50%; /* Set the width to take half of the page */
+            margin-top: 20px; /* Adjust the top margin as needed */
+        }
+
+        .audioContainer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-top: 5px;
+            width: 100%;
+        }
+
+        .audioPlayer {
+            width: calc(33.3% - 20px);
+        }
+
+        .card-header {
+            background-color: #6c584c;
+            padding: 20px;
+        }
+
+        @media (max-width: 767px) {
+            .audioPlayer {
+                width: calc(33.33% - 10px);
+                margin-bottom: 10px;
+            }
+
+            .container, .iframe-container, .card {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .audioPlayer {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-</header> Please Go to the next page to listen to the audio files</header>
-    <div class="container mt-3">
-        <a href="webpage.html" class="btn btn-primary">Go to our website</a>
+    <div class="container">
+        <!-- Google Form iframe -->
+        <iframe class="iframe-container" src="https://docs.google.com/forms/d/e/1FAIpQLSfigGL2QjqGt38nj3oCQSk6yRTE1MB2MQk2OGuH7vA6Skp0wg/viewform?embedded=true" width="500" height="12574" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>Audio Files of ID1, ID2 and ID3</h2>
+            </div>
+            <div class="card-body">
+                <div id="ctm">
+                    <h2>ID1</h2>
+                </div>
+                <div class="audioContainer">
+                    <div class="audioPlayer">
+                        <p>Audio1</p>
+                        <audio controls>
+                            <source src="assets_new/0-CTM.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audioPlayer">
+                        <p>Audio2</p>
+                        <audio controls>
+                            <source src="assets_new/1-CTM.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audioPlayer">
+                        <p>Audio3</p>
+                        <audio controls>
+                            <source src="assets_new/2-CTM.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <div class="audioContainer">
+                    <div class="audioPlayer">
+                        <p>Audio4</p>
+                        <audio controls>
+                            <source src="assets_new/3-CTM.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audioPlayer">
+                        <p>Audio5</p>
+                        <audio controls>
+                            <source src="assets_new/4-CTM.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audioPlayer">
+                        <p>Audio6</p>
+                        <audio controls>
+                            <source src="assets_new/5-CTM.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <div class="audioContainer">
+                    <div class="audioPlayer">
+                        <p>Audio7</p>
+                        <audio controls>
+                            <source src="assets_new/6-CTM.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audioPlayer">
+                        <p>Audio8</p>
+                        <audio controls>
+                            <source src="assets_new/7-CTM.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audioPlayer">
+                        <p>Audio9</p>
+                        <audio controls>
+                            <source src="assets_new/8-CTM.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <div class="audioContainer">
+                    <div class="audioPlayer">
+                        <p>Audio10</p>
+                        <audio controls>
+                            <source src="assets_new/9-CTM.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="ADM">
+                        <h2>ID2</h2>
+                    </div>
+                    <div class="audioContainer">
+                        <div class="audioPlayer">
+                            <p>Audio1</p>
+                            <audio controls>
+                                <source src="assets_new/0-ADM.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audioPlayer">
+                            <p>Audio2</p>
+                            <audio controls>
+                                <source src="assets_new/1-ADM.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audioPlayer">
+                            <p>Audio3</p>
+                            <audio controls>
+                                <source src="assets_new/2-ADM.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audioContainer">
+                        <div class="audioPlayer">
+                            <p>Audio4</p>
+                            <audio controls>
+                                <source src="assets_new/3-ADM.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audioPlayer">
+                            <p>Audio5</p>
+                            <audio controls>
+                                <source src="assets_new/4-ADM.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audioPlayer">
+                            <p>Audio6</p>
+                            <audio controls>
+                                <source src="assets_new/5-ADM.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audioContainer">
+                        <div class="audioPlayer">
+                            <p>Audio7</p>
+                            <audio controls>
+                                <source src="assets_new/6-ADM.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audioPlayer">
+                            <p>Audio8</p>
+                            <audio controls>
+                                <source src="assets_new/7-ADM.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audioPlayer">
+                            <p>Audio9</p>
+                            <audio controls>
+                                <source src="assets_new/8-ADM.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audioContainer">
+                        <div class="audioPlayer">
+                            <p>Audio10</p>
+                            <audio controls>
+                                <source src="assets_new/9-ADM.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                   
+                </div>
+                </div>
+                <div class="card-body">
+                    <div id="specmix">
+                        <h2>ID3</h2>
+                    </div>
+                    <div class="audioContainer">
+                        <div class="audioPlayer">
+                            <p>Audio1</p>
+                            <audio controls>
+                                <source src="assets_new/0-SA.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audioPlayer">
+                            <p>Audio2</p>
+                            <audio controls>
+                                <source src="assets_new/1-SA.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audioPlayer">
+                            <p>Audio3</p>
+                            <audio controls>
+                                <source src="assets_new/2-SA.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audioContainer">
+                        <div class="audioPlayer">
+                            <p>Audio4</p>
+                            <audio controls>
+                                <source src="assets_new/3-SA.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audioPlayer">
+                            <p>Audio5</p>
+                            <audio controls>
+                                <source src="assets_new/4-SA.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audioPlayer">
+                            <p>Audio6</p>
+                            <audio controls>
+                                <source src="assets_new/5-SA.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audioContainer">
+                        <div class="audioPlayer">
+                            <p>Audio7</p>
+                            <audio controls>
+                                <source src="assets_new/6-SA.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audioPlayer">
+                            <p>Audio8</p>
+                            <audio controls>
+                                <source src="assets_new/7-SA.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="audioPlayer">
+                            <p>Audio9</p>
+                            <audio controls>
+                                <source src="assets_new/8-SA.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="audioContainer">
+                        <div class="audioPlayer">
+                            <p>Audio10</p>
+                            <audio controls>
+                                <source src="assets_new/9-SA.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    
+                </div>
+            
+        </div>
     </div>
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfigGL2QjqGt38nj3oCQSk6yRTE1MB2MQk2OGuH7vA6Skp0wg/viewform?embedded=true" width="640" height="12574" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-</html> 
- 
+</body>
+</html>
